@@ -16,10 +16,14 @@ const assert = require('assert');
 
 describe('Testes da função numbers', () => {
   it('testa se a função quando recebe [1, 2, 3, 4, 5], retorna true', () => {
-    assert.strictEqual(numbers([1, 4, 7, 9, 12]), true);
-    assert.strictEqual(numbers([1, 2, '3', 4, 5]), false);
-    assert.strictEqual(numbers([1, 'a', 3]), false);
-    assert.strictEqual(numbers([' ']), false);
+    expect(numbers([1, 2, 3, 4, 5])).toBeTruthy();
+    expect(numbers([1, 2, '3', 4, 5])).toBeFalsy();
+    expect(numbers([1, 'a', 3])).toBeFalsy();
+    expect(numbers([' '])).toBeFalsy();
+    //assert.strictEqual(numbers([1, 4, 7, 9, 12]), true);
+    //assert.strictEqual(numbers([1, 2, '3', 4, 5]), false);
+    //assert.strictEqual(numbers([1, 'a', 3]), false);
+    //assert.strictEqual(numbers([' ']), false);
   });
   /*it('testa se a função quando recebe [1, 2, "3", 4, 5], retorna false', () => {
     assert.strictEqual(numbers([1, 2, '3', 4, 5]), false);
