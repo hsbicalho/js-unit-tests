@@ -14,7 +14,7 @@ const numbers = require('../src/numbers');
 
 */
 
-describe('Testes da função numbers', () => {
+describe('2 - Implemente os casos de teste para a função `numbers`', () => {
   it('testa se a função quando recebe [1, 2, 3, 4, 5], retorna true', () => {
     expect(numbers([1, 2, 3, 4, 5])).toBeTruthy();
   });

@@ -23,7 +23,7 @@ const assert = require('assert');
   OBS: Lembre-se que você não precisa se preocupar com o describe e o it por enquanto, isso será aprendido posteriormente.
 */
 
-describe('4 -Casos de teste para a função circle', () => {
+describe('4 - Implemente os casos de teste para a função `circle`', () => {
   it('Testa se circle retorna undefined, caso o parâmetro passado não seja um número.', () => {
     assert.strictEqual(circle('st'), undefined);
   });
